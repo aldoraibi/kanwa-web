@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>كان وأخواتها</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>كان وأخواتها</h1>
+      <p class="sub">تدريب: اختيار الفعل الناسخ وصيغتي المبتدأ والخبر</p>
+      <p class="hint">اختر الفعل والصيغ؛ تتحدث الجملة فورًا: الأصل مرفوع/مرفوع، وبعد الناسخ الصحيح: المبتدأ مرفوع والخبر منصوب</p>
+    </header>
+
+    <section class="card">
+      <h3>الجملة (تتحدث فورًا)</h3>
+      <div id="live" class="live"></div>
+    </section>
+
+    <section class="controls">
+      <h3>اختر الفعل الناسخ</h3>
+      <div class="row">
+        <button class="chip" data-verb="كان">كان</button>
+        <button class="chip" data-verb="صار">صار</button>
+        <button class="chip" data-verb="ليس">ليس</button>
+      </div>
+
+      <label class="toggle">
+        <input type="checkbox" id="twoStep" checked />
+        <span>التحديد أولًا ثم الإعراب (وضع خطوتين)</span>
+      </label>
+    </section>
+
+    <section id="mubSection" class="card"></section>
+    <section id="khabSection" class="card"></section>
+
+    <section class="actions">
+      <button id="checkBtn" class="btn primary" disabled>تحقّق</button>
+      <button id="nextBtn" class="btn" disabled>التالي</button>
+    </section>
+
+    <section id="feedback" class="feedback hidden"></section>
+
+    <footer class="footer">إعداد وتطوير الأستاذ : يحيى بن محمد الدريبي</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
